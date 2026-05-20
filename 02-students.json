@@ -1,0 +1,41 @@
+{
+    "Students":[
+        {
+            "Name": "Niteesh Gandham",
+            "Age": 29,
+            "Home": "Penugonda",
+            "Address": [
+                {
+                    "Add-type": "Perm",
+                    "Apartment-name": "Fortune"
+
+                },
+                {
+                    "Add-type": "Cureent",
+                    "Apartment-name": "Fortune"
+
+                }
+            ],
+            "Skills": ["java", "Devops", "Cloud"]
+                    
+        },
+        {
+            "Name": "Divya",
+            "Age": 29,
+            "Home": "Penugonda",
+            "Address": [
+                {
+                    "Add-type": "Perm",
+                    "Apartment-name": "Fortune"
+
+                },
+                {
+                    "Add-type": "Cureent",
+                    "Apartment-name": "Fortune"
+
+                }
+            ],
+            "Skills": ["java", "Devops", "Cloud"]
+        }
+    ]
+}

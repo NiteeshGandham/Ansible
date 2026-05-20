@@ -1,0 +1,32 @@
+<students>
+    <student>
+        <studentname>Niteesh Gandham</studentname>
+        <studentid>14A21A0362</studentid>
+        <phonenum>9010633263</phonenum>
+        <address>
+            <pemAdd>
+                <flatname>fortune nest</flatname>
+                <Flatno>501</Flatno>
+            </pemAdd>
+            <CurrentAdd>
+                <flatname>fortune nest</flatname>
+                <Flatno>501</Flatno>
+            </CurrentAdd>
+        </address>
+    </student>
+    <student>
+        <studentname>Divya</studentname>
+        <studentid>14A21A0553</studentid>
+        <phonenum>9010633263</phonenum>
+        <address>
+            <pemAdd>
+                <flatname>fortune nest</flatname>
+                <Flatno>501</Flatno>
+            </pemAdd>
+            <CurrentAdd>
+                <flatname>fortune nest</flatname>
+                <Flatno>501</Flatno>
+            </CurrentAdd>
+        </address>
+    </student>
+</students>
