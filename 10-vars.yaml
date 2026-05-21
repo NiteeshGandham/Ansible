@@ -3,7 +3,7 @@
   connection: local
   vars:
     NAME: "Niteesh Gandham from Play level"
-  vars_file:
+  vars_files:
     - course.yaml
   vars_prompt:
     - name: NAME
