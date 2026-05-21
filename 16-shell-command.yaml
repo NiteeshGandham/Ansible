@@ -4,4 +4,8 @@
   tasks:
   - name: running command using ansible shell
     ansible.builtin.shell: cat /etc/passwd | grep root
-    registor: "{{ user_output }}" 
+    registor: user_output 
+
+  - name: Print the usersoutput
+    ansible.builtin.debug:
+      msg: "{{ user_output }}" 
