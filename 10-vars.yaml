@@ -6,11 +6,11 @@
   vars_files:
     - course.yaml
   vars_prompt:
-    - name: name from prompt level
-      Prompt: Please enter you name
+    - name: NAME
+      prompt: Please enter your name
       private: false
   tasks:
-    - name: Niteesh Gandham from Task level variables
+    - name: name from Task level variables
       vars:
         NAME: Niteesh Gandham from task level
       ansible.builtin.debug:
