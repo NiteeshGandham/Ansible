@@ -9,5 +9,5 @@
       state: present
     loop:
     - mysql
-    - ngnix
+    - nginx
     - zip 
