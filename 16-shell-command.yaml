@@ -9,3 +9,13 @@
   - name: Print the usersoutput
     ansible.builtin.debug:
       msg: "{{ user_output }}" 
+
+  - name: list all the files and ave it in txt format
+    ansible.builtin.shell: ls -al > files.txt
+    register: files_output
+
+  - name: Print the files output
+    ansible.builtin.debug:
+      msg: "{{ files_output }}" 
+
+  
