@@ -6,5 +6,5 @@
   tasks:
     - name: is ansible more than 5 sessions
       ansible.builtin.debug:
-        msg "yes num of sessions are more than 5"
+        msg: "yes num of sessions are more than 5"
       when: NUM_OF_SESSIONS > 5
