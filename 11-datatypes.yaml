@@ -1,0 +1,22 @@
+- name: Demo on Datatypes
+  hosts: local
+  connection: local
+  vars:
+    COURSE: DevOps #string
+    DURATION: 140 #int/num
+    IS_LIVE: TRUE #boolean
+    DETAILS: #map/dictonary
+      MONTHS: 4
+      TRAINER: "Siva"
+    TOPICS: #list
+    - LINUX
+    - SHELL
+    - ANSIBLE
+
+  tasks:
+  - name: Demo on data types
+    ansible.builtin.debug:
+      msg: |
+        Course: {{ COURSE }}
+        Duration: {{ DURATION }}
+        is live?: {{ IS_LIVE }}
