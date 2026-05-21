@@ -1,0 +1,19 @@
+- name: Variable preferences
+  hosts: local
+  connection: local
+  vars:
+    NAME: "Niteesh Gandham from Play level"
+  vars_file:
+    - course.yaml
+  vars_prompt:
+    - name: NAME
+      Prompt: Please enter you name
+      private: false
+  tasks:
+    - name: Niteesh Gandham from Task level variables
+      vars:
+        NAME: Niteesh Gandham from task level
+      ansible.builtin.debug:
+        msg: "Hi, This is {{ NAME }}"
+    
+  
