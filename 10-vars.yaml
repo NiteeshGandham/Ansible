@@ -17,3 +17,10 @@
         msg: "Hi, This is {{ NAME }}"
     
   
+#Preferances of variables
+  #Args
+  #Task
+  #file
+  #prompt
+  #play
+  #inventory
