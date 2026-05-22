@@ -7,7 +7,21 @@
         Course1: linux,
         Course2: shell,
         Course3: ansible
-  
+    tag_map:
+      [
+        {
+            "key": "Course1",
+            "value": "linux,"
+        },
+        {
+            "key": "Course2",
+            "value": "shell,"
+        },
+        {
+            "key": "Course3",
+            "value": "ansible"
+        }
+      ]
 
   tasks:
   - name: Convert string to list
@@ -17,3 +31,7 @@
   - name: convert list to map
     ansible.builtin.debug:
       msg: "{{ tag_list | dict2items }}"
+
+  - name: convert map to list
+    ansible.builtin.debug:
+      msg: "{{ tag_map | items2dict }}"
