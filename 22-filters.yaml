@@ -1,0 +1,10 @@
+- name: Demo on filters
+  hosts: local
+  connection: local
+  tasks:
+  - name: read yaml to json
+    ansible.builtin.set_fact: #setting the variable
+      student_yaml: "{{ lookup('file', 03.students.yaml) | from_yaml }}"
+  - name: convert yaml to json
+    ansible.builtin.debug: 
+      msg: "{{ student_yaml | to_nice_json }}"
