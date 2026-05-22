@@ -3,8 +3,17 @@
   connection: local
   vars:
     topics: linux, shell, ansible
+    tag_list:  [
+        "linux",
+        " shell",
+        " ansible"
+    ]
+
   tasks:
   - name: Convert string to list
     ansible.builtin.debug:
       msg: "{{ topics | split(',') }}"
-      
+
+  - name: convert list to map
+    ansible.builtin.debug:
+      msg: "tag_list | items2dict"
