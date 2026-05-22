@@ -1,0 +1,26 @@
+- name: "Niteesh Gandham"
+  DoB: "12-11-1996"
+  Number: 9010633263
+  Adderess:
+  - flatnumber: 501
+    apartmentname: Fortune
+    city: Hyderabad
+    Add_type: Perm
+  - flatnumber: 501
+    apartmentname: Fortune
+    city: Hyderabad
+    Add_type: Temp
+
+- name: "Divya"
+  DoB: "12-11-1996"
+  Number: 9010633263
+  Adderess:
+  - flatnumber: 501
+    apartmentname: Fortune
+    city: Hyderabad
+    Add_type: Perm
+  - flatnumber: 501
+    apartmentname: Fortune
+    city: Hyderabad
+    Add_type: Temp
+
