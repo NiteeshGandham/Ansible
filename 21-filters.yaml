@@ -4,9 +4,9 @@
   vars:
     topics: linux, shell, ansible
     tag_list:  [
-        "linux",
-        " shell",
-        " ansible"
+        Course1: linux,
+        Course2: shell,
+        Course3: ansible
     ]
 
   tasks:
