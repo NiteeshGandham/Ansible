@@ -3,11 +3,11 @@
   connection: local
   vars:
     topics: linux, shell, ansible
-    tag_list:  [
+    tag_list: 
         Course1: linux,
         Course2: shell,
         Course3: ansible
-    ]
+  
 
   tasks:
   - name: Convert string to list
@@ -16,4 +16,4 @@
 
   - name: convert list to map
     ansible.builtin.debug:
-      msg: "tag_list | items2dict"
+      msg: "tag_list | dict2items"
