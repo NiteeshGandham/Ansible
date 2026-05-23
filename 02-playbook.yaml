@@ -12,6 +12,6 @@
   tasks:
   - name: print the msg from playbook2
     ansible.builtin.debug:
-      msg: "{{ This the msg from playbook 2  }}"
+      msg: "{{ 'This the msg from playbook 2'  }}"
      
 
