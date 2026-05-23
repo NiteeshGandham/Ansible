@@ -1,0 +1,13 @@
+- name: learning error handling
+  hosts: local
+  connetion: local
+  become: yes
+  tasks:
+  - name: check roboshop user is present or not
+    ansible.buildin.command: id roboshop
+    register: user_output
+  
+  - name: print the user_output 
+    ansible.builtin.debug:
+      msg: "{{ user_output }}"
+  
