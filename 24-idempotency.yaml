@@ -1,0 +1,8 @@
+- name: check ansible idempotancy
+  hosts: local
+  connection: local
+  tasks:
+  - name: creating user john using ansible module
+    ansible.builtin.user:
+      name: johnd
+    
