@@ -11,7 +11,7 @@
   connection: local
   tasks:
   - name: print the msg from playbook2
-    ansible.builin.debug:
+    ansible.builtin.debug:
       msg: "{{ This the msg from playbook 2  }}"
      
 
