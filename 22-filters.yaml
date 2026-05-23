@@ -1,6 +1,9 @@
 - name: Demo on filters
   hosts: local
   connection: local
+  vars:
+    Course: "DevOps with Ansible"
+    ip_address: 249.29.90.2
   tasks:
   - name: read yaml to json
     ansible.builtin.set_fact: #setting the variable
@@ -8,3 +11,15 @@
   - name: convert yaml to json
     ansible.builtin.debug: 
       msg: "{{ student_yaml | to_nice_json }}"
+
+  - name: Convert Lower to upper
+    ansible.builtin.debug:
+      msg: "{{ Course | upper }}"
+
+  - name: Convert Upper to Lower
+    ansible.builtin.debug:
+      msg: "{{ Course | lower }}"
+
+  - name: check ipv4
+    ansible.builtin.debug:
+      msd: "{{ ip_address | ansible.utils.ipv4 }}" 
