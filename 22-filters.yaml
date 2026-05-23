@@ -22,4 +22,4 @@
 
   - name: check ipv4
     ansible.builtin.debug:
-      msd: "{{ ip_address | ansible.utils.ipv4 }}" 
+      msg: "{{ ip_address | ansible.utils.ipv4 }}" 
